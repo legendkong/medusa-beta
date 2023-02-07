@@ -4,10 +4,12 @@ import './index.css'
 function App() {
   return (
     <>
-      <h1 className='text-3xl mt-10 font-bold text-green-500 text-center'>
-        Medusa
-      </h1>
-      <span>beta</span>
+      <div className='text-center mt-40'>
+        <h1 className='inline-block bg-gradient-to-r from-blue-600 via-green-300 to-indigo-400 bg-clip-text text-7xl text-transparent font-extrabold '>
+          Medusa
+        </h1>
+        <div id='betatag'>beta</div>
+      </div>
     </>
   )
 }
