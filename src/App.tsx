@@ -1,15 +1,13 @@
 // import { Routes, Route } from 'react-router-dom'
 import './index.css'
+import { Header } from './components/header'
+import { Card } from './components/card'
 
 function App() {
   return (
     <>
-      <div className='text-center mt-40'>
-        <h1 className='inline-block bg-gradient-to-r from-blue-600 via-green-300 to-indigo-400 bg-clip-text text-7xl text-transparent font-extrabold '>
-          Medusa
-        </h1>
-        <div id='betatag'>beta</div>
-      </div>
+      <Header />
+      <Card />
     </>
   )
 }
