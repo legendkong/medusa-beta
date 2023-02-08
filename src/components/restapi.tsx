@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
-import axios from "axios"
 export function Restapi() {
   const [backendData, setBackendData] = useState([{}])
 
   useEffect(() => {
+    // to create proxy server to bypass CORS policy
     fetch("http://localhost:3000/api")
       .then((response) => response.json())
       .then((data) => {
@@ -12,5 +12,13 @@ export function Restapi() {
     console.log(backendData)
   }, [])
 
-  return <div>asdasdasdasdsadsadsadasdsa</div>
+  return (
+    <div>
+      {typeof backendData.users === "undefined" ? (
+        <p>Loading...</p>
+      ) : (
+        backendData.users.map((user, i) => <p key={i}>{user}</p>)
+      )}
+    </div>
+  )
 }
