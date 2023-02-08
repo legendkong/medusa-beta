@@ -1,8 +1,9 @@
 // import { Routes, Route } from 'react-router-dom'
-import './index.css'
-import { Header } from './components/header'
-import { Card } from './components/card'
-import { Navbar } from './components/navbar'
+import "./index.css"
+import { Header } from "./components/header"
+import { Card } from "./components/card"
+import { Navbar } from "./components/navbar"
+import { Restapi } from "./components/restapi"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <Card />
+      <Restapi />
     </>
   )
 }
